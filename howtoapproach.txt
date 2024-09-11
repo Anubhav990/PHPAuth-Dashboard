@@ -1,0 +1,22 @@
+id
+firstName
+lastName
+email
+phoneNumber
+password => Hash | md5 Hashing 
+status => active | inactive
+role => admin, user
+verified => 1 | 0
+created_at
+updated_at
+deleted_at
+
+
+=> Login Form
+Form Validation
+Check email if it exists in the database
+if exists -> then verify the password
+if email and password didn't match then redirect to login page and show the error message
+if email and password matched then redirected to dashboard page
+
+http://localhost/Anubhavphpprac/src/views/users/users.php   how to fix such url in the url box 

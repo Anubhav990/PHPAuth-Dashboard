@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+
+    background-color: var(--background-color4);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: default;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/*Registration form*/
+
+.row-container {
+    margin-top: 70px;
+}
+
+.row-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 20px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.row h5 {
+    color: #0093db;
+    font-size: 16px;
+    font-family: 'Santral-Medium';
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: start;
+    padding-bottom: 10px;
+}
+
+.row h2 {
+    font-size: 34px;
+}
+
+.column1 {
+    padding-top: 120px;
+    padding-right: 50px;
+}
+
+/* form */
+
+.formline1 {
+    display: flex;
+    gap: 20px;
+}
+
+.formline2 {
+    display: flex;
+    gap: 20px;
+}
+
+.formline3 {
+    display: flex;
+    gap: 20px;
+}
+
+.formline4 {
+    display: flex;
+    gap: 20px;
+}
+
+.textarea4 textarea {
+    height: 200px;
+}
+
+textarea {
+    font-size: 15px;
+    width: 480px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+    color: #808080;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+input {
+    font-size: 15px;
+    width: 230px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    color: #808080;
+}
+
+select {
+    font-size: 15px;
+    width: 230px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    color: #808080;
+}
+
+.select-control {
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus {
+    outline: 0;
+}
+
+select:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.select-control.success select {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.select-control.error select {
+    border-color: #ff3860;
+}
+
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control .error-message {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.select-control .error-message {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.error-message-check {
+    color: #ff3860;
+    font-size: 14px;
+    height: 13px;
+}
+
+.form-container {
+
+    border-radius: 5px;
+    padding: 20px;
+
+}
+
+button {
+    background: #4CAF50;
+    border-radius: 100px;
+    padding: 15px 59px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Santral-Book' !important;
+    font-weight: 400;
+    border: none;
+    text-decoration: none;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(4, 107, 1);
+}
