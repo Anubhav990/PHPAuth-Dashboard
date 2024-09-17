@@ -2,6 +2,7 @@
 <?php
 session_start();
 include("../../db/connection.php");
+// include("../middlwares/HasAccess.php");
 
 $users_role = '';
 

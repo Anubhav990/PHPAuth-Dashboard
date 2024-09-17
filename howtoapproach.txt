@@ -20,3 +20,10 @@ if email and password didn't match then redirect to login page and show the erro
 if email and password matched then redirected to dashboard page
 
 http://localhost/Anubhavphpprac/src/views/users/users.php   how to fix such url in the url box 
+
+
+
+permissions
+
+id | role | pages | created_at | updated_at
+1 | admin | users | time | time

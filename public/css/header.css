@@ -1,5 +1,3 @@
-/* Main CSS Here */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
@@ -76,7 +74,6 @@ header {
     border-radius: 50px 0 0 50px;
     background-color: var(--background-color3);
     padding: 0 20px;
-    margin-bottom: 4px;
     font-size: 15px;
     outline: none;
     border: none;
@@ -84,7 +81,7 @@ header {
 
 .searchbtn {
     width: 50px;
-    height: 40px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,12 +134,11 @@ header {
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding: 40px 30px 30px 30px;
+    padding: 20px 30px 30px 30px;
 }
 
 .main::-webkit-scrollbar-thumb {
-    background-image:
-        linear-gradient(to bottom, rgb(0, 0, 85), rgb(0, 0, 50));
+    background-image: linear-gradient(to bottom, rgb(0, 0, 85), rgb(0, 0, 50));
 }
 
 .main::-webkit-scrollbar {
@@ -151,14 +147,6 @@ header {
 
 .main::-webkit-scrollbar-track {
     background-color: #9e9e9eb2;
-}
-
-.box-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
 }
 
 .nav {
@@ -190,7 +178,7 @@ header {
 }
 
 .navclose {
-    width: 70px;
+    width: 72px;
 }
 
 .nav-option {
@@ -204,7 +192,7 @@ header {
 }
 
 .nav-option:hover {
-    border-left: 2px solid #a2a2a2;
+    border-left: 3px solid #a2a2a2;
     background-color: #dadada;
     cursor: pointer;
 }
@@ -266,226 +254,132 @@ header {
 }
 
 
-.topic {
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 1px;
+
+/*responsive css*/
+
+/* Responsive CSS Here */
+@media screen and (max-width: 950px) {
+    .nav-img {
+        height: 25px;
+    }
+
+    .nav-option {
+        gap: 30px;
+    }
+
+    .nav-option h3 {
+        font-size: 15px;
+    }
 }
 
-.topic-heading {
-    font-size: 30px;
-    letter-spacing: 3px;
-}
+@media screen and (max-width: 850px) {
+    .nav-img {
+        height: 30px;
+    }
 
-#show {
-    visibility: visible;
-}
+    .nav-option {
+        gap: 30px;
+    }
 
-#not-show {
-    visibility: hidden;
-}
+    .nav-option h3 {
+        font-size: 20px;
+    }
 
-/*Registration form*/
+    .navcontainer {
+        width: 100vw;
+        position: absolute;
+        transition: all 0.6s ease-in-out;
+        top: 0;
+        left: -100vw;
+    }
 
-.row-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 20px;
-    width: 1200px;
-    margin: 0 auto;
-}
+    .nav {
+        width: 100%;
+        position: absolute;
+    }
 
-.row {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
+    .navclose {
+        left: 00px;
+    }
 
-.row h5 {
-    color: #0093db;
-    font-size: 16px;
-    font-family: 'Santral-Medium';
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: start;
-    padding-bottom: 10px;
-}
+    .searchbar {
+        display: none;
+    }
 
-.row h2 {
-    font-size: 34px;
-}
-
-.column1 {
-    padding-top: 120px;
-    padding-right: 50px;
-}
-
-/*Registration form*/
-
-.row-container {
-    margin-top: 70px;
-}
-
-.row-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #eee;
-    border-radius: 20px;
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.row {
-    padding: 60px;
-    display: flex;
-    justify-content: center;
-}
-
-.row h5 {
-    color: #0093db;
-    font-size: 16px;
-    font-family: 'Santral-Medium';
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: start;
-    padding-bottom: 10px;
-}
-
-.row h2 {
-    font-size: 34px;
-}
-
-.column1 {
-    padding: 30px;
-}
-
-/* form */
-
-.formline1 {
-    display: flex;
-    gap: 20px;
-}
-
-.formline2 {
-    display: flex;
-    gap: 20px;
-}
-
-.formline3 {
-    display: flex;
-    gap: 20px;
-}
-
-.formline4 {
-    display: flex;
-    gap: 20px;
-}
-
-input {
-    font-size: 15px;
-    width: 230px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    color: #808080;
-}
-
-select {
-    font-size: 15px;
-    width: 230px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    color: #808080;
-}
-
-.select-control {
-    display: flex;
-    flex-direction: column;
-}
-
-input:focus {
-    outline: 0;
-}
-
-select:focus {
-    outline: 0;
-}
-
-.input-control.success input {
-    border-color: #09c372;
-}
-
-.select-control.success select {
-    border-color: #09c372;
-}
-
-.input-control.error input {
-    border-color: #ff3860;
-}
-
-.select-control.error select {
-    border-color: #ff3860;
-}
-
-
-.input-control {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-control .error-message {
-    color: #ff3860;
-    font-size: 9px;
-    height: 13px;
-}
-
-.select-control .error-message {
-    color: #ff3860;
-    font-size: 9px;
-    height: 13px;
-}
-
-.error-message-check {
-    color: #ff3860;
-    font-size: 14px;
-    height: 13px;
-}
-
-.form-container {
-
-    border-radius: 5px;
-    padding: 20px;
+    .main {
+        padding: 40px 30px 30px 30px;
+    }
 
 }
 
-button {
-    background: #4CAF50;
-    border-radius: 100px;
-    padding: 15px 59px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: 'Santral-Book' !important;
-    font-weight: 400;
-    border: none;
-    text-decoration: none;
-    margin: 0 auto;
-    cursor: pointer;
+@media screen and (max-width: 490px) {
+    .message {
+        display: none;
+    }
+
+    .logosec {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menuicn {
+        height: 25px;
+    }
+
+    .nav-img {
+        height: 25px;
+    }
+
+    .nav-option {
+        gap: 25px;
+    }
+
+    .nav-option h3 {
+        font-size: 12px;
+    }
+
+    .nav-upper-options {
+        gap: 15px;
+    }
+
 }
 
-button:hover {
-    background: rgb(4, 107, 1);
+@media screen and (max-width: 400px) {
+
+    .view {
+        width: 60px;
+        font-size: 10px;
+        height: 27px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .view {
+        width: 50px;
+        font-size: 8px;
+        height: 27px;
+    }
+
+    .t-op {
+        font-size: 12px;
+    }
+
+    .t-op-nextlvl {
+        font-size: 10px;
+    }
+
+    .label-tag {
+        width: 70px;
+    }
+
+    .searchbtn {
+        width: 40px;
+    }
 }
